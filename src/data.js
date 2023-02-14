@@ -1,4 +1,4 @@
-import image from './images/selfie.jpg';
+import image from './images/selfie.png';
 const data = [
     {
         img: image,
