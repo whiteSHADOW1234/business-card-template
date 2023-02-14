@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/business-card-template/static/js/main.cab5b1e6.js",
-    "static/media/selfie.jpg": "/business-card-template/static/media/selfie.f33050f76a4bd7b8ac05.jpg",
+    "main.js": "/business-card-template/static/js/main.2a1a3e82.js",
+    "static/media/selfie.png": "/business-card-template/static/media/selfie.49d8e332ab7e77dcf2bf.png",
     "index.html": "/business-card-template/index.html",
-    "main.cab5b1e6.js.map": "/business-card-template/static/js/main.cab5b1e6.js.map"
+    "main.2a1a3e82.js.map": "/business-card-template/static/js/main.2a1a3e82.js.map"
   },
   "entrypoints": [
-    "static/js/main.cab5b1e6.js"
+    "static/js/main.2a1a3e82.js"
   ]
 }
