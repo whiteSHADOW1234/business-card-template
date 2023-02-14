@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans&family=Montserrat:wght@200&display=swap');
+
+html {
+    text-align: center;
+    background: rgb(49, 49, 49);
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    margin: 0 auto;
+    transition: 0.5s;
+    border: 1px solid #686868;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #747474;
+    width: 450px;
+    height: 100%;
+    cursor: pointer;
+    background: black;
+}
+.card .head-pic {
+    width: 450px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all linear 0.5s;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgb(0, 60, 255);
+}
+.card .head-pic img {
+    width: 100%;
+}
+.card .head-pic:hover img {
+    transform: scale(1.1);
+}
+.card .card-body {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: -10%;
+    border-radius: 0.8rem;
+}
+
+.card .card-body p{
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    white-space:pre-wrap;
+    /* add some blank space to the left */
+    margin-left: 50px;
+    /* seperate the words which is longer than the width of the card */
+    word-wrap: break-word;
+    /* and make all the words align left */
+    text-align: left;
+}
+
+.card .card-title{
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.card .card-title h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card .card-title h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fdca5a;
+    margin-bottom: 0rem;
+
+}
+
+.card .card-title p {
+    margin-top: 0rem;
+    font-family: Itim, cursive;
+    color: #8d8d8d;
+}
+
+.card .card-body h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    /* Center left */
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 0rem;
+}
+.card .card-body p {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    white-space:pre-wrap;
+}
+
+.btn {
+    margin-right: 10px;
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+      /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+                    /* Top-left */
+                    0% var(--curve-size),
+        
+                    var(--curve-size) 0,
+                    /* top-right */
+                    100% 0,
+                    100% calc(100% - var(--curve-size)),
+        
+                    /* bottom-right 1 */
+                    calc(100% - var(--curve-size)) 100%,
+                    /* bottom-right 2 */
+                    0 100%
+                );
+    transition: color 250ms;
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+              /* Top-left */
+              var(--border-width) 
+              calc(var(--curve-size) + var(--border-width) * .5),
+  
+              calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+  
+              /* top-right */
+              calc(100% - var(--border-width)) 
+              var(--border-width),
+  
+              calc(100% - var(--border-width)) 
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+  
+              /* bottom-right 1 */
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+              /* bottom-right 2 */
+              var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+                  /* Top-left */
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      
+                  calc(100% - var(--border-width))
+  
+                  var(--border-width),
+      
+                  /* top-right */
+                  calc(100% - var(--border-width))
+  
+                   var(--border-width),
+      
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+                  /* bottom-right 1 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                  calc(100% - var(--border-width)),
+  
+                  /* bottom-right 2 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                  calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+
+  }
+  
+  .social-links a {
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    color: #b0b0b0;
+    padding: 0.5rem;
+  }
