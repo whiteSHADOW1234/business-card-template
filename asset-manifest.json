@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/business-card-template/static/js/main.cab5b1e6.js",
+    "static/media/selfie.jpg": "/business-card-template/static/media/selfie.f33050f76a4bd7b8ac05.jpg",
+    "index.html": "/business-card-template/index.html",
+    "main.cab5b1e6.js.map": "/business-card-template/static/js/main.cab5b1e6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cab5b1e6.js"
+  ]
+}
